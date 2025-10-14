@@ -1,0 +1,3 @@
+# @package _global_
+exp_dir: '/home/jma/Documents/rsna/models/SSL3D_classification/experiments/'
+data_dir: '/home/jma/Documents/rsna/nnssl_dataset/nnssl_preprocessed'

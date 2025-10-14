@@ -1,0 +1,11 @@
+# @package _global_
+exp_dir: ${oc.env:EXPERIMENT_LOCATION}
+
+trainer:
+  enable_progress_bar: True
+  callbacks:
+    progressbar:
+      _target_: lightning.pytorch.callbacks.TQDMProgressBar
+    lr_monitor:
+      _target_: lightning.pytorch.callbacks.LearningRateMonitor
+      logging_interval: epoch

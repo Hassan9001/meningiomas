@@ -1,0 +1,9 @@
+conda activate ssl3d
+export nnssl_raw="/home/jma/Documents/projects/meningiomas/nnssl_dataset/nnssl_raw"
+export nnssl_preprocessed="/home/jma/Documents/projects/meningiomas/nnssl_dataset/nnssl_preprocessed"
+export nnssl_results="/home/jma/Documents/projects/meningiomas/nnssl_dataset/nnssl_results"
+
+/home/jma/Documents/projects/meningiomas/create_pretrain_data_from_csv.py
+1. nnssl_extract_fingerprint -d 001 -np 20
+2. nnssl_plan_experiment -d 001
+3. nnssl_preprocess -d 001 -np 20 -c onemmiso
